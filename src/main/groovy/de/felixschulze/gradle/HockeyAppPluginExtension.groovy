@@ -53,7 +53,9 @@ class HockeyAppPluginExtension {
     def String tags = null
     def Map<String, String> variantToTags = null
     def String teams = null
+    def Map<String, String> variantToTeams = null
     def String users = null
+    def Map<String, String> variantToUsers = null
     def int timeout = 60 * 1000
     def Map<String, String> variantToApplicationId = null
     def Boolean teamCityLog = false

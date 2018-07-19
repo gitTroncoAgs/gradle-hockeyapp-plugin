@@ -94,6 +94,8 @@ hockeyapp {
 * `variantToStatus`: Optional: `[variantName: "1", variantName2: "2"]` map between your variants and status
 * `variantToStrategy`: Optional: `[variantName: "1", variantName2: "2"]` map between your variants and strategy
 * `variantToTags`: Optional: `[variantName: "1", variantName2: "2"]` map between your variants and tags
+* `variantToTeams`: Optional: `[variantName: "1", variantName2: "2"]` map between your variants and teams
+* `variantToUsers`: Optional: `[variantName: "1", variantName2: "2"]` map between your variants and users
 * `variantToNotify`: Optional: `[variantName: "1", variantName2: "2"]` map between your variants and notify
 
 

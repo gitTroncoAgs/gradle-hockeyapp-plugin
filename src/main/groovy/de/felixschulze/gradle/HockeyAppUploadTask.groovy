@@ -334,11 +334,13 @@ class HockeyAppUploadTask extends DefaultTask {
         if (tags) {
             entityBuilder.addPart("tags", new StringBody(tags))
         }
-        if (hockeyApp.teams) {
-            entityBuilder.addPart("teams", new StringBody(hockeyApp.teams))
+        String teams = optionalProperty(hockeyApp.teams as String, hockeyApp.variantToTeams)
+        if (teams) {
+            entityBuilder.addPart("teams", new StringBody(teams))
         }
-        if (hockeyApp.users) {
-            entityBuilder.addPart("users", new StringBody(hockeyApp.users))
+        String users = optionalProperty(hockeyApp.users as String, hockeyApp.variantToUsers)
+        if (users) {
+            entityBuilder.addPart("users", new StringBody(users))
         }
         String mandatory = optionalProperty(hockeyApp.mandatory as String, hockeyApp.variantToMandatory)
         if (mandatory){
